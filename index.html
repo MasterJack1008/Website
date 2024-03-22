@@ -36,10 +36,10 @@
                 <h1>La surprise arrive dans :</h1>
             </div>
             <div class="countdown">
-            <div class="box" id="days"><span class="number"></span> <span class="label">Jours</span> </div>
-            <div class="box" id="hours"><span class="number"></span> <span class="label">Heures</span> </div>
-            <div class="box" id="minutes"><span class="number"></span> <span class="label">Minutes</span> </div>
-            <div class="box" id="seconds"><span class="number"></span> <span class="label">Secondes</span></div>
+            <div class="box" id="days"></div>
+            <div class="box" id="hours"></div>
+            <div class="box" id="minutes"></div>
+            <div class="box" id="seconds"></div>
             </div>
             <div id="post-countdown-message" style="display:none;">
                 <h1>Le compte à rebours est terminé !</h1>
@@ -67,10 +67,10 @@
         var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
         // Output the result in an element with id="demo"
-        document.getElementById("days").innerHTML = days;
-        document.getElementById("hours").innerHTML = hours;
-        document.getElementById("minutes").innerHTML = minutes;
-        document.getElementById("seconds").innerHTML = seconds;
+        document.getElementById("days").innerHTML = days + "J";
+        document.getElementById("hours").innerHTML = hours + "H";
+        document.getElementById("minutes").innerHTML = minutes + "m";
+        document.getElementById("seconds").innerHTML = seconds + "s";
 
         // If the count down is over, write some text
         if (distance < 0) {
