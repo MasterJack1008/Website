@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('background.jpg'); /* Remplacez 'background.jpg' par le chemin de votre image d'arrière-plan */
+    background-size: cover;
+    background-position: center;
+    color: #ffffff; /* Couleur du texte */
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.countdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-weight: bold;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7); /* Fond semi-transparent */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    background-color: #d11a1a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+}
+
+.banner {
+    margin-bottom: 30px;
+    background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent pour la bannière */
+    padding: 10px 0;
+    border-radius: 5px;
+}
+
+h1 {
+    font-size: 24px;
+    margin: 0;
+}
